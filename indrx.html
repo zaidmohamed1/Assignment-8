@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What's For Dinner</title>
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/indrx.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  " >
+  <div class="container ">
+   <div class="d-flex align-items-center">
+    <div class="h-75">
+       <i class="fa-solid fa-utensils p-3 me-4 mt-3   main-bg main-color  rounded-circle "></i>
+    </div>
+    <div>
+      <h1>What's For Dinner</h1>
+    <p>Your daily meal inspiration</p>
+    </div>
+   </div>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item mt-3 me-4">
+        <i class="fa-solid fa-bookmark"></i>
+        </li>
+        <li class="nav-item mt-3 me-4">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+        </li>
+        <li class="nav-item mt-3 me-4">
+            <i class="fa-solid fa-gear"></i>
+        </li>
+        <li class="nav-item zz">
+           <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" class="w-100 rounded-circle border-3 border-warning" alt="">
+        </li>
+       
+       
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container fade p-0">
+    <div class="image-section">
+      <img id="recipe-img" src=""  alt="Recipe Image" />
+      <div class="rating">
+        ⭐ <span id="rating">4.7</span> (<span id="reviews">367 reviews</span>)
+      </div>
+      <div class="time-box w-75 m-auto ms-5">
+        <div class="me-5">
+          <i class="fa-solid fa-clock fs-3 "></i>
+          <p>Prep Time</p>
+          <span id="prep-time">15 min</span>
+        </div>
+        <div class="me-5">
+            <i class="fa-solid fa-fire-burner text-danger fs-3"></i>
+          <p>Cook Time</p>
+          <span id="cook-time">20 min</span>
+        </div>
+        <div class="">
+          <i class="fa-solid fa-users fs-3"></i>
+          <p>Servings</p>
+          <span id="servings">2 people</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="details-section">
+      <div class="tags">
+        <span id="difficulty" class="tag easy">Easy</span>
+        <span id="category" class="tag">Asian</span>
+      </div> 
+      <div class="aa">
+        <div>
+            
+      <h2 id="recipe-title">Recipe Title</h2>
+      <p id="recipe-desc">Recipe Description</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-bookmark main-color main-bg p-3 rounded-3 me-3"></i>
+            <i class="fa-solid fa-share-nodes main-color main-bg p-3 rounded-3"></i>
+        </div>
+
+      </div>
+
+
+      <div id="warning" class="warning hidden">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <div>
+          <strong>Extended Preparation Time</strong>
+          <p>This recipe requires more than 45 minutes to prepare. Plan accordingly!</p>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="ingredients"><i data-lucide="list"></i> Ingredients</button>
+        <button class="tab" data-tab="instructions"><i data-lucide="book-open"></i> Instructions</button>
+        <button class="tab" data-tab="nutrition"><i data-lucide="utensils"></i> Nutrition</button>
+        <button class="tab" data-tab="tips"><i data-lucide="lightbulb"></i> Chef’s Tips</button>
+      </div>
+
+      <div id="tab-content" class="tab-content"></div>
+
+      <button id="next-recipe" class="next-btn">
+        <i data-lucide="refresh-ccw"></i> Try Another Recipe
+      </button>
+    </div>
+  </div>
+<script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/indrx.js"></script>
+</body>
+</html>
